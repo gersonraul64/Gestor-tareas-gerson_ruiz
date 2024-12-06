@@ -21,7 +21,7 @@ h1 {
 }
 
 .task-manager {
-    max-width: 400px;
+    max-width: 700px;
     margin: 2rem auto;
     background-color: white;
     padding: 1rem;
@@ -31,8 +31,8 @@ h1 {
 
 input[type="text"] {
     /* Estilos */
-    width: calc(100%-100px);
-    padding: 0.5rem;
+    /* width: calc(100%-100px); */
+    padding: 0.5rem 15rem;
     margin-right: 10px;
     border-radius: 5px;
     border: 1px solid #c0c0c0;
@@ -63,12 +63,18 @@ ul {
 li {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: start;
+    align-items:center;
     background-color: #f4f4f4;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0rem;
     padding: 0.5rem;
     border-radius: 5px;
     border: solid 1px #ddd;
+  
+}
+
+#borrado{
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
