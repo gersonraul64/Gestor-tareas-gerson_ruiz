@@ -38,27 +38,35 @@ function addTask() {
     
 }
 
+
+
+
 // Evento al boton
 
 addTaskButton.addEventListener('click', addTask)
 
 
-const deleteButton = document.getElementById('delTaskButton');
 
 
-$(delTaskButton).addEventListener('click', prueba)
+document.getElementById('taskList').addEventListener('click',listado)
+function listado (){
 
+    let tareas = document.getElementById('taskList').value;
 
-// document.getElementById('taskList').addEventListener('submit', prueba)
-// function prueba() {
-//       alert('enviando formulario');
+    const task = {
+        tareas
+    };
+    
+    localStorage.setItem('ListadoTareas',task);
     
 
-    // console.log(document.getElementById('taskList').value)
-   
-    // e.preventDefault();
+}
 
-// }
+// const taskTextNode = document.createTextNode(taskText);
+
+
+
+
 
 // const deleteButton = document.querySelector('#delTaskButton');
 //Configurar las tareas
