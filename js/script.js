@@ -18,7 +18,7 @@ function addTask() {
     //Crear las tareas dentro li
     const taskItem = document.createElement('li');
     const buttonborrar = document.createElement('button')
-    // buttonBorrar.type = 'button'
+    buttonborrar.type = 'button'
     buttonborrar.className = 'botonborrar'
     buttonborrar.id = 'delTaskButton'
     buttonborrar.innerHTML = '🗑️';
