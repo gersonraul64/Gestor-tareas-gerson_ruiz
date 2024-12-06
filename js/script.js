@@ -17,11 +17,11 @@ function addTask() {
     
     //Crear las tareas dentro li
     const taskItem = document.createElement('li');
-    const buttonBorrar = document.createElement('button')
-    buttonBorrar.type = 'button'
-    buttonBorrar.className = 'botonborrar'
-    buttonBorrar.id = 'borrado'
-    buttonBorrar.innerText = '🗑️';
+    const buttonborrar = document.createElement('button')
+    // buttonBorrar.type = 'button'
+    buttonborrar.className = 'botonborrar'
+    buttonborrar.id = 'delTaskButton'
+    buttonborrar.innerHTML = '🗑️';
     const buttonOK = document.createElement('button')
     buttonOK.type = 'button'
     buttonOK.className = 'botonOK'
@@ -30,7 +30,7 @@ function addTask() {
     taskItem.textContent = taskText;
     
     taskList.appendChild(taskItem)  
-    taskItem.appendChild(buttonBorrar) 
+    taskItem.appendChild(buttonborrar) 
     taskItem.appendChild(buttonOK);
     
     //limpiar input
@@ -39,14 +39,14 @@ function addTask() {
 }
 
 // Evento al boton
+
 addTaskButton.addEventListener('click', addTask)
 
-const delTaskButton = document.querySelector('#borrado');
-buttonBorrar.click = prueba()
-delTaskButton.addEventListener('click', addTask)
+
+const deleteButton = document.getElementById('delTaskButton');
 
 
-
+$(delTaskButton).addEventListener('click', prueba)
 
 
 // document.getElementById('taskList').addEventListener('submit', prueba)
@@ -60,6 +60,7 @@ delTaskButton.addEventListener('click', addTask)
 
 // }
 
+// const deleteButton = document.querySelector('#delTaskButton');
 //Configurar las tareas
 
 // deleteButton.textContent = "Eliminar";
